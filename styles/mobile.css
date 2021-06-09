@@ -157,6 +157,10 @@ header nav ul li:nth-child(4) {
     font-size: 15px;
     margin-bottom: 17px;
 }
+.rooms .button-reserve2 img {
+    width: 36px;
+    height: 36px;
+}
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
     display: none;
 }
