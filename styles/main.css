@@ -75,6 +75,7 @@ nav li a {
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 .button-reserve1 img, .button-reserve2 img {
 	margin-top: 7px;
@@ -173,6 +174,7 @@ nav li a {
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 .button-reserve2 a {
 	font-weight: 600;
@@ -301,4 +303,75 @@ nav li a {
 	font-size: 12px;
 	line-height: 14px;
 	color: #8f8f8f;
+}
+/*Форма бронирования*/
+.pop-up {
+	position: absolute;
+	top: 146px;
+	margin-left: 50%;
+	display: none;
+	z-index: 15;
+}
+.pop-up_content {
+	width: 570px;
+	background: url(../images/paw-bg3.png) no-repeat left -20px top -20px #fffefd;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 10px;
+	padding: 70px;
+	position: relative;
+	margin-left: -50%;
+}
+.pop-up input {
+	border: 1px solid #d7d7d7;
+	border-radius: 25px;
+}
+.pop-up .button-reserve2 {
+	width: 230px;
+	margin: 50px auto 70px auto;
+}
+.close-button {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+.row {
+	margin-bottom: 20px;
+	position: relative;
+}
+.row input {
+	padding: 15px 10px 15px 30px;
+	width: 430px;
+}
+.date input {
+	padding: 15px 5px 15px 20px;
+	width: 129px;
+}
+.row label {
+	display: inline-block;
+	padding: 15px 5px 15px 30px;
+	position: absolute;
+	font-size: 16px;
+}
+.pop-up h3 {
+	font-family: Rubik, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+}
+.date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+label[for="from"] {
+	margin-left: 15px;
+}
+.white {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(255, 255, 255, .5);
+	position: fixed;
+	z-index: 10;
+	display: none;
 }

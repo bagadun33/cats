@@ -28,6 +28,7 @@
 		</script>
 </head>
 <body>
+	<div class="white"></div>
 	<header>
 		<div class="logo">
 			<img src="images/logo.png" alt="логотип">
@@ -61,7 +62,7 @@
 		<h1>Котейка</h1>
 		<h2>Уютная гостиница для котов и кошек</h2>
 		<div class="button-reserve1">
-			<a href="catalog.html">Забронировать</a>
+			<a href="#">Забронировать</a>
 			<img src="images/paw.png" alt="Забронировать">
 		</div>
 	</div>
@@ -115,7 +116,7 @@
 					<li>Цена за сутки: 200₽</li>
 				</ul>
 				<div class="button-reserve2">
-					<a href="catalog.html">Забронировать</a>
+					<a href="#">Забронировать</a>
 					<img src="images/paw1.png" alt="Забронировать">
 				</div>
 			</figcaption>
@@ -130,7 +131,7 @@
 					<li>Цена за сутки: 250₽</li>
 				</ul>
 				<div class="button-reserve2">
-					<a href="catalog.html">Забронировать</a>
+					<a href="#">Забронировать</a>
 					<img src="images/paw1.png" alt="Забронировать">
 				</div>
 			</figcaption>
@@ -145,7 +146,7 @@
 					<li>Цена за сутки: 350₽</li>
 				</ul>
 				<div class="button-reserve2">
-					<a href="catalog.html">Забронировать</a>
+					<a href="#">Забронировать</a>
 					<img src="images/paw1.png" alt="Забронировать">
 				</div>
 			</figcaption>
@@ -225,10 +226,61 @@
 		<span>Политика конфиденциальности</span>
 	</div>
 </footer>
+
+	<div class="pop-up">
+		<div class="pop-up_content">
+
+
+		
+
+		<h3>Забронировать номер</h3>
+		<form action="#" method="post">
+		<div class="row">
+			<label for="name">Ваше имя</label>
+			<input type="text" id="name">
+		</div>	
+			
+		<div class="row">
+			<label for="pet_name">Имя Питомца</label>
+			<input type="text" id="pet_name">
+		</div>
+			
+		<div class="row">
+			<label for="tel">Телефон</label>
+			<input type="text" id="tel">
+		</div>
+			
+		<div class="row">
+			<label for="email">E-mail</label>	
+			<input type="text" id="email">
+		</div>
+			
+		<div class="date">
+			<span>Дата заезда</span>
+			<label for="from">с</label> <input type="date" placeholder="26.03.21" id="from"> 
+			<label>по</label> <input type="date" placeholder="29.03.21" id="till">
+		</div>
+			
+			<div class="button-reserve2">
+				<a href="catalog.html">Отправить заявку</a>
+				<img src="images/paw1.png" alt="Отправить заявку">
+			</div>
+		</form>
+
+		<div class="close-button">
+			<img src="images/close.png" alt="Закрыть">
+		</div>
+		</div>
+	</div>
 	
 	
 	<script src="scripts/owlcarousel/owl.carousel.min.js">
 	</script>
+
+	<script src="scripts/pop-up.js">
+
+	</script>
+
 	<script>
 	let w = window.innerWidth;
 
